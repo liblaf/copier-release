@@ -1,0 +1,18 @@
+# https://copier.readthedocs.io/en/stable/configuring/
+
+_answers_file: .github/copier/.copier-answers.release.yaml
+
+_jinja_extensions:
+  - cookiecutter.extensions.SlugifyExtension
+
+_subdirectory: template
+
+release_type:
+  type: str
+  help: release-type
+  choices:
+    - go
+    - node
+    - python
+    - rust
+    - simple
