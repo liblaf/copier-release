@@ -2,6 +2,9 @@
 
 _answers_file: .github/copier/.copier-answers.release.yaml
 
+_skip_if_exists:
+  - .github/release-please/.manifest.json
+
 _subdirectory: template
 
 release_type:
