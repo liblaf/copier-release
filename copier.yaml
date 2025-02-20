@@ -8,7 +8,6 @@ _migrations:
 
 _skip_if_exists:
   - .github/release-please/.manifest.json
-  - .github/release-please/config.json
 
 _subdirectory: template
 
