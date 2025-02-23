@@ -4,7 +4,7 @@ _answers_file: .github/copier/.copier-answers.release.yaml
 
 _migrations:
   - rm --force --verbose .github/release-please.yml
-  - rm --force --verbose .github/workflows/release-please.yaml
+  - rm --force --verbose .github/workflows/shared-release-please.yaml
 
 _skip_if_exists:
   - .github/release-please/.manifest.json
@@ -13,7 +13,7 @@ _subdirectory: template
 
 _tasks:
   - rm --force --verbose .github/release-please.yml
-  - rm --force --verbose .github/workflows/release-please.yaml
+  - rm --force --verbose .github/workflows/shared-release-please.yaml
 
 release_type:
   type: str
