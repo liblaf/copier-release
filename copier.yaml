@@ -10,7 +10,7 @@ _migrations:
   - rm --force --verbose ".github/workflows/shared-release-please.yaml"
 
 _skip_if_exists:
-  - .github/release-please/.manifest.json
+  - .config/release-please/.manifest.json
 
 _subdirectory: template
 
