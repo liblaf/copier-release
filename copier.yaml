@@ -3,10 +3,10 @@
 _answers_file: .github/copier/.copier-answers.release.yaml
 
 _migrations:
-  - mv --force --verbose ".github/release-please/config.json"
-  - rm --force --no-target-directory --verbose ".github/release-please/.manifest.json" ".config/release-please/.manifest.json" || true
+  - mv --force --no-target-directory --verbose ".github/release-please/.manifest.json" ".config/release-please/.manifest.json" || true
   - rm --force --verbose ".github/copier/.copier-answers.release.yaml"
   - rm --force --verbose ".github/release-please.yml"
+  - rm --force --verbose ".github/release-please/config.json"
   - rm --force --verbose ".github/workflows/shared-release-please.yaml"
 
 _skip_if_exists:
@@ -15,10 +15,10 @@ _skip_if_exists:
 _subdirectory: template
 
 _tasks:
-  - mv --force --verbose ".github/release-please/config.json"
-  - rm --force --no-target-directory --verbose ".github/release-please/.manifest.json" ".config/release-please/.manifest.json" || true
+  - mv --force --no-target-directory --verbose ".github/release-please/.manifest.json" ".config/release-please/.manifest.json" || true
   - rm --force --verbose ".github/copier/.copier-answers.release.yaml"
   - rm --force --verbose ".github/release-please.yml"
+  - rm --force --verbose ".github/release-please/config.json"
   - rm --force --verbose ".github/workflows/shared-release-please.yaml"
 
 release_type:
