@@ -36,12 +36,6 @@
   "include-component-in-tag": false,
   "initial-version": "0.0.0",
   "packages": {
-    ".": {
-      {%- if release_type == "node" %}
-      "extra-files": [
-        { "type": "json", "path": "jsr.json", "jsonpath": "$.version" }
-      ]
-    {% endif -%}
-    }
+    ".": {}
   }
 }
