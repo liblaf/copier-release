@@ -2,6 +2,10 @@
 
 _answers_file: .config/copier/.copier-answers.release.yaml
 
+_envops:
+  line_statement_prefix: "# %%"
+  line_comment_prefix: "# ##"
+
 _migrations: &migrations
   - mv --force --no-target-directory --verbose '.github/release-please/.manifest.json' '.config/release-please/.manifest.json' || true
   - rm --force --verbose '.github/copier/.copier-answers.release.yaml'
