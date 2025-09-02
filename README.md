@@ -45,7 +45,7 @@ This repository provides a comprehensive template for managing GitHub repositori
 To install `gh:liblaf/copier-release`, run the following command:
 
 ```bash
-$ copier copy --trust gh:liblaf/copier-release .
+copier copy --trust gh:liblaf/copier-release .
 ```
 
 <div align="right">
@@ -63,8 +63,8 @@ You can use Github Codespaces for online development:
 Or clone it for local development:
 
 ```bash
-$ git clone https://github.com/liblaf/copier-release.git
-$ cd copier-release
+git clone https://github.com/liblaf/copier-release.git
+cd copier-release
 ```
 
 <div align="right">
