@@ -17,3 +17,6 @@ words:
   - direnv
   - envops
   - liblaf
+  - mkdocs
+  - pytest
+  - uuidgen
