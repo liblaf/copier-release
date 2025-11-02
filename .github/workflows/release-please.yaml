@@ -88,6 +88,7 @@ jobs:
         uses: liblaf/actions/commit@dist
         with:
           add-options: --verbose 'CHANGELOG.md'
+          force: true
           message: ${{ steps.message.outputs.message }}
           ref: ${{ fromJson(needs.release-please.outputs.pr).headBranchName }}
           token: ${{ steps.auth.outputs.token }}
