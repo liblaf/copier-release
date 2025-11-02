@@ -1,0 +1,15 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    name: R
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: liblaf/copier-release/.github/workflows/callable-release-please.yaml@main
+    secrets: inherit
