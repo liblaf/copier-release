@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.1](https://github.com/liblaf/copier-release/compare/v0.1.0..v0.1.1) - 2025-11-02
+
+### 🐛 Bug Fixes
+
+- **ci:** Update GitHub Actions to stable versions and force color output - ([532089b](https://github.com/liblaf/copier-release/commit/532089b9ceba250a8c6689ae9bd75db9a055c014))
+
+### ❤️ New Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+
 ## [0.1.0] - 2025-11-02
 
 ### ✨ Features
@@ -51,7 +61,7 @@
 
 ### ❤️ New Contributors
 
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#16](https://github.com/liblaf/copier-release/pull/16)
 - [@liblaf](https://github.com/liblaf) made their first contribution
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#15](https://github.com/liblaf/copier-release/pull/15)
 - [@copier-update[bot]](https://github.com/apps/copier-update) made their first contribution in [#12](https://github.com/liblaf/copier-release/pull/12)
 - [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#10](https://github.com/liblaf/copier-release/pull/10)
