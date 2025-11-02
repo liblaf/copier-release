@@ -11,7 +11,6 @@ _migrations: &migrations
   - rm --force --verbose '.github/copier/.copier-answers.release.yaml'
   - rm --force --verbose '.github/release-please.yml'
   - rm --force --verbose '.github/release-please/config.json'
-  - rm --force --verbose '.github/workflows/release-please.yaml'
   - rm --force --verbose '.github/workflows/shared-release-please.yaml'
 
 _skip_if_exists:
