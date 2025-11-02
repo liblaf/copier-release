@@ -39,7 +39,7 @@ jobs:
         with:
           token: ${{ steps.auth.outputs.token }}
           config-file: .config/release-please/config.json
-          manifest-file: .config/release-please/manifest.json
+          manifest-file: .config/release-please/.manifest.json
 
   changelog-pr:
     name: Changelog (PR)
