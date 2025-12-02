@@ -7,22 +7,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3](https://github.com/liblaf/copier-release/releases/tag/v0.1.3) - 2025-12-02
+
+### 🐛 Bug Fixes
+
+- trigger release - [ce840dc](https://github.com/liblaf/copier-release/commit/ce840dcc19fd396a868a9e0e4fea48ceb4dea0a7) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#23](https://github.com/liblaf/copier-release/pull/23)
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#22](https://github.com/liblaf/copier-release/pull/22)
+
 ## [0.1.2](https://github.com/liblaf/copier-release/releases/tag/v0.1.2) - 2025-11-03
 
 ### 🐛 Bug Fixes
 
-- **(ci)** Add concurrency to release-please workflow - [0a106d2](https://github.com/liblaf/copier-release/commit/0a106d28be92a0791c07d7b83fa82805dc826b82) by [@liblaf](https://github.com/liblaf)
+- **ci:** Add concurrency to release-please workflow - [0a106d2](https://github.com/liblaf/copier-release/commit/0a106d28be92a0791c07d7b83fa82805dc826b82) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#20](https://github.com/liblaf/copier-release/pull/20)
-- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
 
 ## [0.1.1](https://github.com/liblaf/copier-release/releases/tag/v0.1.1) - 2025-11-02
 
 ### 🐛 Bug Fixes
 
-- **(ci)** Update GitHub Actions to stable versions and force color output - [532089b](https://github.com/liblaf/copier-release/commit/532089b9ceba250a8c6689ae9bd75db9a055c014) by [@liblaf](https://github.com/liblaf)
+- **ci:** Update GitHub Actions to stable versions and force color output - [532089b](https://github.com/liblaf/copier-release/commit/532089b9ceba250a8c6689ae9bd75db9a055c014) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -33,8 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(release-please)** enable changelog generation and update section emojis - [2531688](https://github.com/liblaf/copier-release/commit/2531688b62cd660c2378c98857a2f0903fc34f31) by [@liblaf](https://github.com/liblaf)
-- **(release-please)** implement comprehensive release automation workflow - [4bfd0ad](https://github.com/liblaf/copier-release/commit/4bfd0ad7472afe61cfd438f2ede717fd7ef01061) by [@liblaf](https://github.com/liblaf)
+- **release-please:** enable changelog generation and update section emojis - [2531688](https://github.com/liblaf/copier-release/commit/2531688b62cd660c2378c98857a2f0903fc34f31) by [@liblaf](https://github.com/liblaf)
+- **release-please:** implement comprehensive release automation workflow - [4bfd0ad](https://github.com/liblaf/copier-release/commit/4bfd0ad7472afe61cfd438f2ede717fd7ef01061) by [@liblaf](https://github.com/liblaf)
 - add Copier and Release Please configuration templates - [f253f94](https://github.com/liblaf/copier-release/commit/f253f948aa736bd2404bae464ae4cda4aab27b8e) by [@liblaf](https://github.com/liblaf)
 - implement reusable Release Please workflow with changelog automation - [dfd7640](https://github.com/liblaf/copier-release/commit/dfd7640d1aa6903ebfdce18925b181b4627cd6a7) by [@liblaf](https://github.com/liblaf)
 - add initial release automation configuration and workflow files - [c138d8a](https://github.com/liblaf/copier-release/commit/c138d8ac995358bc9db8766c9adc9b17f5db4b95) by [@liblaf](https://github.com/liblaf)
@@ -47,16 +59,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 📝 Documentation
 
-- **(readme)** rewrite for conciseness and automation - [ea98840](https://github.com/liblaf/copier-release/commit/ea98840a556da8d7b300d7d5cb8090521f7e4db9) by [@liblaf](https://github.com/liblaf)
+- **readme:** rewrite for conciseness and automation - [ea98840](https://github.com/liblaf/copier-release/commit/ea98840a556da8d7b300d7d5cb8090521f7e4db9) by [@liblaf](https://github.com/liblaf)
 - update release-type help text with reference URL - [5fac43d](https://github.com/liblaf/copier-release/commit/5fac43d337fac2a54e070a5948565a86dd9d123d) by [@liblaf](https://github.com/liblaf)
 - add comprehensive README for repository template - [4169f81](https://github.com/liblaf/copier-release/commit/4169f813ee8c99daa79fb6134331f27e17f2fda5) by [@liblaf](https://github.com/liblaf)
 - update README.md with direct badge URLs and remove redundant references - [c7b363c](https://github.com/liblaf/copier-release/commit/c7b363ccb1da4d9e6982e532fce882cd57dfe68e) by [@liblaf](https://github.com/liblaf)
 
 ### 💄 Styles
 
-- **(config)** ensure editor mode hint at top of generated answers file - [ec9934a](https://github.com/liblaf/copier-release/commit/ec9934a52a59673ad08da38c4d986ef872b52dc0) by [@liblaf](https://github.com/liblaf)
-- **(template)** configure Jinja line prefixes - [4ab34fc](https://github.com/liblaf/copier-release/commit/4ab34fc4ac787d9d6f723f4b98e385403f723a2a) by [@liblaf](https://github.com/liblaf)
-- **(templates)** update Jinja comment syntax in copier configuration and template - [20bbdce](https://github.com/liblaf/copier-release/commit/20bbdce846c6b0666e31665e7c6a38437167b293) by [@liblaf](https://github.com/liblaf)
+- **config:** ensure editor mode hint at top of generated answers file - [ec9934a](https://github.com/liblaf/copier-release/commit/ec9934a52a59673ad08da38c4d986ef872b52dc0) by [@liblaf](https://github.com/liblaf)
+- **template:** configure Jinja line prefixes - [4ab34fc](https://github.com/liblaf/copier-release/commit/4ab34fc4ac787d9d6f723f4b98e385403f723a2a) by [@liblaf](https://github.com/liblaf)
+- **templates:** update Jinja comment syntax in copier configuration and template - [20bbdce](https://github.com/liblaf/copier-release/commit/20bbdce846c6b0666e31665e7c6a38437167b293) by [@liblaf](https://github.com/liblaf)
 - compact release-please config formatting - [dcf71e9](https://github.com/liblaf/copier-release/commit/dcf71e996e4a7029e6867710bfd10b0793baab75) by [@liblaf](https://github.com/liblaf)
 
 ### ♻ Code Refactoring
@@ -66,7 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ⚙️ Continuous Integration
 
-- **(release)** Refine Release Please workflow for PRs and labels - [1b13765](https://github.com/liblaf/copier-release/commit/1b13765d8758fd85c3d0681be370174db81a88f4) by [@liblaf](https://github.com/liblaf)
+- **release:** Refine Release Please workflow for PRs and labels - [1b13765](https://github.com/liblaf/copier-release/commit/1b13765d8758fd85c3d0681be370174db81a88f4) by [@liblaf](https://github.com/liblaf)
 - add GitHub workflows and configuration files - [66e420e](https://github.com/liblaf/copier-release/commit/66e420e8142cecb45c6b706461ebfb331f60b1ca) by [@liblaf](https://github.com/liblaf)
 - simplify token usage in release-please workflow - [0356c2e](https://github.com/liblaf/copier-release/commit/0356c2e858519c908450bcfa15f158387aa79b7d) by [@liblaf](https://github.com/liblaf)
 - add concurrency to release-please workflow - [8ad8a03](https://github.com/liblaf/copier-release/commit/8ad8a0363f737da7cc3ebc99a383f654d94b0b07) by [@liblaf](https://github.com/liblaf)
