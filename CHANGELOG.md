@@ -7,6 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4](https://github.com/liblaf/copier-release/releases/tag/v0.1.4) - 2025-12-20
+
+### 🐛 Bug Fixes
+
+- **ci:** Format and commit release-please manifest in post-PR - [16ead38](https://github.com/liblaf/copier-release/commit/16ead38344fb7f98e8ab50e77760fe9171b29edf) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#29](https://github.com/liblaf/copier-release/pull/29)
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#28](https://github.com/liblaf/copier-release/pull/28)
+
 ## [0.1.3](https://github.com/liblaf/copier-release/releases/tag/v0.1.3) - 2025-12-02
 
 ### 🐛 Bug Fixes
@@ -15,9 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#23](https://github.com/liblaf/copier-release/pull/23)
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#22](https://github.com/liblaf/copier-release/pull/22)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [0.1.2](https://github.com/liblaf/copier-release/releases/tag/v0.1.2) - 2025-11-03
 
