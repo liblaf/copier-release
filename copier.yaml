@@ -10,5 +10,7 @@ _migrations:
     version: v0.2.0
   - command: rm --force --recursive '.github/workflows/release-please.yaml'
     version: v0.2.0
+  - command: rm --force --recursive '.github/workflows/release-create.yaml'
+    version: v0.2.3
 
 _subdirectory: template
