@@ -4,28 +4,11 @@ _answers_file: .config/copier/.copier-answers.release.yaml
 
 _envops:
   comment_start_string: "# {#"
-  line_statement_prefix: "# %%"
 
-_migrations: &migrations
-  - mv --force --no-target-directory --verbose '.github/release-please/.manifest.json' '.config/release-please/.manifest.json' || true
-  - rm --force --verbose '.github/copier/.copier-answers.release.yaml'
-  - rm --force --verbose '.github/release-please.yml'
-  - rm --force --verbose '.github/release-please/config.json'
-  - rm --force --verbose '.github/workflows/shared-release-please.yaml'
-
-_skip_if_exists:
-  - .config/release-please/.manifest.json
+_migrations:
+  - command: rm --force --recursive '.config/release-please/'
+    version: v0.2.0
+  - command: rm --force --recursive '.github/workflows/release-please.yaml'
+    version: v0.2.0
 
 _subdirectory: template
-
-_tasks: *migrations
-
-# ref: <https://github.com/googleapis/release-please?tab=readme-ov-file#strategy-language-types-supported>
-release_type:
-  type: str
-  choices:
-    - go
-    - node
-    - python
-    - rust
-    - simple
