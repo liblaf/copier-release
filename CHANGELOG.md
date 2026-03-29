@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please) made their first contribution in [#40](https://github.com/liblaf/copier-release/pull/40)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf[bot]](https://github.com/apps/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
