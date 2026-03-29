@@ -13,9 +13,7 @@ on:
 jobs:
   release-create:
     name: Create release
-    if: >-
-      github.head_ref == 'release-please' &&
-      github.event.pull_request.merged
+    if: startsWith(github.head_ref, 'release-please/') && github.event.pull_request.merged
     runs-on: ubuntu-latest
     environment:
       name: Release Please
