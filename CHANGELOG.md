@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.1](https://github.com/liblaf/copier-release/releases/tag/v0.2.1) - 2026-03-29
+
+### ⚙️ Continuous Integrations
+
+- **(release)** support per-branch release-please PRs - [dc585de](https://github.com/liblaf/copier-release/commit/dc585de77eb166c9e5697edd9632165d4b0b3276) by [@liblaf](https://github.com/liblaf)
+- capitalize release workflow display names - [65bcd46](https://github.com/liblaf/copier-release/commit/65bcd468cf64c166dd96977f3d2cd8372e327063) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.2.0](https://github.com/liblaf/copier-release/releases/tag/v0.2.0) - 2026-03-29
 
 ### 💥 BREAKING CHANGES
@@ -25,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please) made their first contribution in [#40](https://github.com/liblaf/copier-release/pull/40)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf[bot]](https://github.com/apps/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
