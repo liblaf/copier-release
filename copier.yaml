@@ -5,12 +5,9 @@ _answers_file: .config/copier/.copier-answers.release.yaml
 _envops:
   comment_start_string: "# {#"
 
-_migrations:
-  - command: rm --force --recursive '.config/release-please/'
-    version: v0.2.0
-  - command: rm --force --recursive '.github/workflows/release-please.yaml'
-    version: v0.2.0
-  - command: rm --force --recursive '.github/workflows/release-create.yaml'
-    version: v0.2.3
-
 _subdirectory: template
+
+_tasks:
+  - rm --force --recursive '.config/release-please/'
+  - rm --force '.github/workflows/release-create.yaml'
+  - rm --force '.github/workflows/release-please.yaml'
