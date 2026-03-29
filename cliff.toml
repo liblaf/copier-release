@@ -39,7 +39,7 @@ body = """
 
 {%- macro print_commit(c) -%}
   - {% if c.scope %}**({{ c.scope }})** {% endif -%}\
-    {%- if c.breaking %}\\[breaking\\] {% endif -%}\
+    {%- if c.breaking %}**\\[breaking\\]** {% endif -%}\
       {{ c.message }} - \
         [{{ c.id | truncate(length=7, end="") }}]({{ self::remote_url() }}/commit/{{ c.id }})
         {%- if c.remote.username %} by {{ self::user(u=c.remote.username) }}{% endif -%}
