@@ -99,7 +99,6 @@ body = """
 """
 footer = ""
 trim = true
-render_always = true
 
 [git]
 conventional_commits = true
