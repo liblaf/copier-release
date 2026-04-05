@@ -7,7 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.2.7](https://github.com/liblaf/copier-release/releases/tag/v0.2.7) - 2026-04-04
+## [v0.2.8](https://github.com/liblaf/copier-release/releases/tag/v0.2.8) - 2026-04-05
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** pin dependencies (#67) - [af71a34](https://github.com/liblaf/copier-release/commit/af71a3482bb57faedb8f102a61b0cb35103ed7ac) by [@renovate[bot]](https://github.com/apps/renovate) in [#67](https://github.com/liblaf/copier-release/pull/67)
+- align release workflows with current action refs - [78ac48e](https://github.com/liblaf/copier-release/commit/78ac48e913c208e9695fdcfb441b3bbdbc569b1f) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+
+## [v0.2.7](https://github.com/liblaf/copier-release/releases/tag/v0.2.7) - 2026-04-05
 
 ### ⚙️ Continuous Integrations
 
@@ -20,6 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.2.6](https://github.com/liblaf/copier-release/releases/tag/v0.2.6) - 2026-03-31
