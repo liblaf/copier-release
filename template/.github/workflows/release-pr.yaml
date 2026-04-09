@@ -32,7 +32,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install git-cliff
-        uses: taiki-e/install-action@80e6af7a2ec7f280fffe2d0a9d3a12a9d11d86e9 # v2
+        uses: taiki-e/install-action@b8be7f5e140177087325943c4a8e169d01c59b3d # v2
         with:
           tool: git-cliff
       - id: version
@@ -67,7 +67,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install git-cliff
-        uses: taiki-e/install-action@80e6af7a2ec7f280fffe2d0a9d3a12a9d11d86e9 # v2
+        uses: taiki-e/install-action@b8be7f5e140177087325943c4a8e169d01c59b3d # v2
         with:
           tool: git-cliff
       - name: Generate changelog
