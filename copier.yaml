@@ -7,4 +7,5 @@ _subdirectory: template
 _tasks:
   - rm --force --recursive '.config/release-please/'
   - rm --force '.github/workflows/release-create.yaml'
+  - rm --force '.github/workflows/release-draft.yaml'
   - rm --force '.github/workflows/release-please.yaml'

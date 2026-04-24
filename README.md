@@ -4,8 +4,9 @@
 
 [![Made with Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier)
 [![Release PR](https://github.com/liblaf/copier-release/actions/workflows/release-pr.yaml/badge.svg)](https://github.com/liblaf/copier-release/actions/workflows/release-pr.yaml)
-[![Release Draft](https://github.com/liblaf/copier-release/actions/workflows/release-draft.yaml/badge.svg)](https://github.com/liblaf/copier-release/actions/workflows/release-draft.yaml)
 [![Release Publish](https://github.com/liblaf/copier-release/actions/workflows/release-publish.yaml/badge.svg)](https://github.com/liblaf/copier-release/actions/workflows/release-publish.yaml)
+[![MegaLinter](https://github.com/liblaf/copier-release/actions/workflows/shared-mega-linter.yaml/badge.svg)](https://github.com/liblaf/copier-release/actions/workflows/shared-mega-linter.yaml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/liblaf/copier-release/main.svg)](https://results.pre-commit.ci/latest/github/liblaf/copier-release/main)
 
 [Copier Docs](https://copier.readthedocs.io/) · [Changelog](https://github.com/liblaf/copier-release/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-release/issues) · [Request Feature](https://github.com/liblaf/copier-release/issues)
 
@@ -13,27 +14,27 @@
 
 </div>
 
-## 🚀 Overview
+## ✨ Features
 
-`copier-release` is a Copier template for repositories that want a clean, mostly hands-off GitHub release flow.
+`copier-release` is a small Copier template for GitHub repositories that want a conventional-commit release loop without copying release plumbing by hand.
 
-- ✨ Opens a release PR from conventional commits pushed to `main`
-- 📝 Generates and updates `CHANGELOG.md` with `git-cliff`
-- 🏷️ Tags the merged release commit and creates a draft GitHub release
-- ⏰ Publishes draft releases automatically after 6 hours
-- 📦 Bumps `package.json` automatically when the file exists
-- 🧩 Leaves package publishing and asset uploads to your own project workflows
+- 🚀 **Release PRs from `main`**: calculates the next semantic version with `git-cliff`, writes `CHANGELOG.md`, bumps `package.json` when it exists, and opens a signed release PR.
+- 🏷️ **GitHub releases after merge**: watches merged `release-please/*` PRs, creates the version tag, and creates the matching GitHub Release from the PR body.
+- 🧹 **Legacy cleanup**: removes older release-please config and superseded release workflow names during Copier generation.
+- 🧩 **Project-friendly scope**: handles changelogs, tags, and GitHub Releases while leaving package publishing, artifacts, and deployment to the consuming project.
 
 ## 📦 Apply The Template
 
 > [!IMPORTANT]
-> Use `--trust` when applying or updating this template. It runs Copier tasks during generation.
+> Use `--trust` when applying or updating this template. The template runs cleanup tasks during generation.
 
 ```bash
 copier copy --trust gh:liblaf/copier-release .
 ```
 
 ## 🔄 Update The Template
+
+Generated repositories keep their release-template answers in `.config/copier/.copier-answers.release.yaml`.
 
 ```bash
 copier recopy --trust --answers-file '.config/copier/.copier-answers.release.yaml'
@@ -43,59 +44,50 @@ copier recopy --trust --answers-file '.config/copier/.copier-answers.release.yam
 
 | File | Purpose |
 | --- | --- |
-| `.github/workflows/release-pr.yaml` | Calculates the next version, updates the changelog, and opens a release PR on pushes to `main`. |
-| `.github/workflows/release-draft.yaml` | Runs after a merged release PR, creates the Git tag, and creates a draft GitHub release. |
-| `.github/workflows/release-publish.yaml` | Runs hourly or on demand and publishes draft releases older than 6 hours. |
-| `.config/copier/.copier-answers.release.yaml` | Stores Copier answers so future `copier recopy` runs stay reproducible. |
+| `.github/workflows/release-pr.yaml` | Finds the next version, generates the changelog and release PR body, bumps `package.json` when present, and opens a release PR. |
+| `.github/workflows/release-publish.yaml` | Runs when a `release-please/*` PR is merged, then tags the merge commit and creates the GitHub Release. |
+| `.config/copier/.copier-answers.release.yaml` | Stores the template source and answers for reproducible `copier recopy` runs. |
 
-> [!NOTE]
-> The changelog format is maintained centrally in this repository through a shared `git-cliff` config. Generated repositories do not need to copy a local `cliff.toml`.
+The generated workflows use this repository's shared [`git-cliff`](https://git-cliff.org/) configuration from `https://raw.githubusercontent.com/liblaf/copier-release/refs/heads/main/cliff.toml`, so generated repositories do not need to keep their own `cliff.toml`.
 
 ## 🔐 Required GitHub Setup
 
-Create a GitHub Actions environment named `Release Please`, then provide:
+Create a GitHub Actions environment named `release-please`, then provide:
 
 - `vars.APP_ID`
 - `secrets.PRIVATE_KEY`
 
-These credentials are used by the workflows to open release PRs, push tags, create draft releases, and publish them later.
+Those credentials are passed to [`liblaf/actions/auth`](https://github.com/liblaf/actions) so the workflows can open release PRs, push tags, and create GitHub Releases as a GitHub App.
 
 ## 🔁 Release Flow
 
-1. Push commits using the Conventional Commits format such as `feat:`, `fix:`, `docs:`, or `ci:`.
-2. `release-pr.yaml` runs on pushes to `main` and opens a release PR with changelog updates and version bumps where applicable.
-3. Merge the release PR yourself, or approve it and let [`mergery[bot]`](https://github.com/apps/mergery) merge it once the merge button is green.
-4. `release-draft.yaml` tags the merge commit and creates a draft GitHub release.
-5. Your own workflows can publish packages, build artifacts, and upload release assets. Those jobs are intentionally not included in this template.
-6. `release-publish.yaml` publishes the draft release after it has been sitting for 6 hours, which gives your publish jobs time to finish.
+1. Push Conventional Commits to `main`, such as `feat:`, `fix:`, `docs:`, or `ci:`.
+2. `release-pr.yaml` calculates the next version and opens `release-please/main` when a release is needed.
+3. Review and merge the release PR after CI is green.
+4. `release-publish.yaml` tags the merged release commit and creates the GitHub Release.
+5. Run project-specific publish, artifact, or deploy workflows from your own repository.
 
 ## 🧭 Commit Guidance
 
-Stick to Conventional Commits if you want predictable version bumps and a well-structured changelog.
-
-```text
-feat: add OAuth login
-fix(ci): retry flaky upload step
-docs: clarify release setup
-```
+Use Conventional Commits for predictable version bumps and changelog grouping.
 
 ## 🤝 Contributing
 
-Ideas, fixes, and improvements are all welcome. If you want to help refine the template or extend the release flow, open an issue or send a pull request.
+Ideas, fixes, and improvements are welcome. Open an issue or pull request if you want to refine the template, release workflow, or generated changelog format.
 
 [![PR WELCOME](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-release/pulls)
 [![Contributors](https://gh-contributors-gamma.vercel.app/api?repo=liblaf/copier-release)](https://github.com/liblaf/copier-release/graphs/contributors)
 
 ## 🔗 More Copier Templates
 
-- **[Shared](https://github.com/liblaf/copier-shared)** - ✨ Shared automation for code quality, maintenance, and repository hygiene
-- **[Python](https://github.com/liblaf/copier-python)** - 🐍 A modern Python project template with tooling, docs, and CI ready to go
-- **[Rust](https://github.com/liblaf/copier-rust)** - 🦀 A Rust template with cross-compilation, CI, and release automation
-- **[TypeScript](https://github.com/liblaf/copier-typescript)** - 🚀 A TypeScript template built around modern tooling and GitHub automation
+- **[Shared](https://github.com/liblaf/copier-shared)** - shared automation for code quality, maintenance, and repository hygiene
+- **[Python](https://github.com/liblaf/copier-python)** - a modern Python project template with tooling, docs, and CI
+- **[Rust](https://github.com/liblaf/copier-rust)** - a Rust template with cross-compilation, CI, and release automation
+- **[TypeScript](https://github.com/liblaf/copier-typescript)** - a TypeScript template built around modern tooling and GitHub automation
 
 ---
 
 #### 📝 License
 
 Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/liblaf/copier-release/blob/main/LICENSE) licensed.

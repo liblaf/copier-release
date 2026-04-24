@@ -13,9 +13,8 @@ ignoreRandomStrings: true
 maxFileSize: 500KB
 useGitignore: true
 words:
-  - envops
+  - bfadeab
   - liblaf
-  - mkdocs
   - pipx
-  - pytest
+  - rumdl
   - taiki
