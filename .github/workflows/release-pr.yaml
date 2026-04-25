@@ -10,7 +10,9 @@ on:
 
 env:
   GIT_CLIFF_CONFIG_URL: >-
-    https://raw.githubusercontent.com/liblaf/copier-release/refs/heads/main/cliff.toml
+    https://raw.githubusercontent.com/liblaf/copier-release/0c66649f89da259fdfdc5e34caf43a57d1ce5d46/cliff.toml
+
+#
 
 concurrency:
   group: ${{ github.workflow }} @ ${{ github.ref }}
@@ -106,3 +108,5 @@ jobs:
             automerge
             release-please
           assignees: ${{ github.repository_owner }}
+
+#
