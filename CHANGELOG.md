@@ -7,6 +7,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.3.0](https://github.com/liblaf/copier-release/releases/tag/v0.3.0) - 2026-04-25
+
+### 💥 BREAKING CHANGES
+
+- repositories must replace APP_ID with APP_CLIENT_ID and PRIVATE_KEY with APP_PRIVATE_KEY before applying this template update - [a82e095](https://github.com/liblaf/copier-release/commit/a82e0959094d549d205f1ec3979b44fa42985905) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update taiki-e/install-action digest to cf525cb (#88) - [7c9d4b2](https://github.com/liblaf/copier-release/commit/7c9d4b292a5d79d48c81f0ae8cdb5275cc1fec6b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **\[breaking\]** migrate workflows to GitHub App client IDs - [a82e095](https://github.com/liblaf/copier-release/commit/a82e0959094d549d205f1ec3979b44fa42985905) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.2.9](https://github.com/liblaf/copier-release/releases/tag/v0.2.9) - 2026-04-24
 
 ### ⚙️ Continuous Integrations
@@ -35,6 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
