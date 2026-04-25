@@ -15,6 +15,9 @@ useGitignore: true
 words:
   - bfadeab
   - liblaf
+  - mkdocs
+  - oxfmt
+  - oxlint
   - pipx
   - rumdl
   - taiki

@@ -16,12 +16,13 @@
 
 ## ✨ Features
 
-`copier-release` is a small Copier template for GitHub repositories that want a conventional-commit release loop without copying release plumbing by hand.
+`copier-release` is a compact Copier template for GitHub repositories that want a conventional-commit release loop without carrying release workflow boilerplate by hand.
 
-- 🚀 **Release PRs from `main`**: calculates the next semantic version with `git-cliff`, writes `CHANGELOG.md`, bumps `package.json` when it exists, and opens a signed release PR.
-- 🏷️ **GitHub releases after merge**: watches merged `release-please/*` PRs, creates the version tag, and creates the matching GitHub Release from the PR body.
-- 🧹 **Legacy cleanup**: removes older release-please config and superseded release workflow names during Copier generation.
-- 🧩 **Project-friendly scope**: handles changelogs, tags, and GitHub Releases while leaving package publishing, artifacts, and deployment to the consuming project.
+- 🚀 **Release PRs from `main`**: calculates the next semantic version with `git-cliff`, writes `CHANGELOG.md`, bumps `package.json` when present, and opens a signed `release-please/*` pull request.
+- 🏷️ **GitHub Releases after merge**: watches merged release PRs, creates the version tag, and publishes the GitHub Release from the PR body.
+- 📌 **Pinned release configuration**: renders `release-pr.yaml` with a raw `cliff.toml` URL tied to the Copier-selected template revision.
+- 🧹 **Legacy cleanup**: removes superseded release-please config and older release workflow names during generation.
+- 🧩 **Narrow responsibility**: handles changelogs, tags, and GitHub Releases while leaving package publishing, artifacts, and deployment to the consuming repository.
 
 ## 📦 Apply The Template
 
@@ -32,32 +33,36 @@
 copier copy --trust gh:liblaf/copier-release .
 ```
 
-## 🔄 Update The Template
-
-Generated repositories keep their release-template answers in `.config/copier/.copier-answers.release.yaml`.
-
-```bash
-copier recopy --trust --answers-file '.config/copier/.copier-answers.release.yaml'
-```
-
-## 🧱 What You Get
+Generated repositories receive:
 
 | File | Purpose |
 | --- | --- |
-| `.github/workflows/release-pr.yaml` | Finds the next version, generates the changelog and release PR body, bumps `package.json` when present, and opens a release PR. |
-| `.github/workflows/release-publish.yaml` | Runs when a `release-please/*` PR is merged, then tags the merge commit and creates the GitHub Release. |
-| `.config/copier/.copier-answers.release.yaml` | Stores the template source and answers for reproducible `copier recopy` runs. |
+| `.github/workflows/release-pr.yaml` | Finds the next version, generates the changelog and release PR body, optionally bumps `package.json`, and opens the release PR. |
+| `.github/workflows/release-publish.yaml` | Runs after a merged `release-please/*` PR, then pushes the tag and creates the GitHub Release. |
+| `.config/copier/.copier-answers.release.yaml` | Stores the template source and rendered answers for reproducible recopy runs. |
 
-The generated workflows use this repository's shared [`git-cliff`](https://git-cliff.org/) configuration from `https://raw.githubusercontent.com/liblaf/copier-release/refs/heads/main/cliff.toml`, so generated repositories do not need to keep their own `cliff.toml`.
+## 🔄 Update The Template
+
+Generated repositories keep release-template answers in `.config/copier/.copier-answers.release.yaml`.
+
+```bash
+copier recopy --force --skip-answered --trust --answers-file '.config/copier/.copier-answers.release.yaml'
+```
+
+Repositories that also use [`copier-shared`](https://github.com/liblaf/copier-shared) can update every configured template with the shared task:
+
+```bash
+mise run copier-update --skip-answered --trust --force
+```
 
 ## 🔐 Required GitHub Setup
 
-Create a GitHub Actions environment named `release-please`, then provide:
+Create a GitHub Actions environment named `release-please`, then configure these repository or environment values:
 
-- `vars.APP_ID`
-- `secrets.PRIVATE_KEY`
+- `vars.APP_CLIENT_ID`: the GitHub App Client ID from the app settings.
+- `secrets.APP_PRIVATE_KEY`: a private key for the same GitHub App.
 
-Those credentials are passed to [`liblaf/actions/auth`](https://github.com/liblaf/actions) so the workflows can open release PRs, push tags, and create GitHub Releases as a GitHub App.
+Those credentials are passed to [`liblaf/actions/auth`](https://github.com/liblaf/actions) so the workflows can open release PRs, push tags, and create GitHub Releases as a GitHub App. If a repository was configured for the older v1 workflow inputs, replace the numeric `vars.APP_ID` value with the app's Client ID in `vars.APP_CLIENT_ID`, and move or recreate `secrets.PRIVATE_KEY` as `secrets.APP_PRIVATE_KEY` before applying this template update.
 
 ## 🔁 Release Flow
 
@@ -65,7 +70,7 @@ Those credentials are passed to [`liblaf/actions/auth`](https://github.com/libla
 2. `release-pr.yaml` calculates the next version and opens `release-please/main` when a release is needed.
 3. Review and merge the release PR after CI is green.
 4. `release-publish.yaml` tags the merged release commit and creates the GitHub Release.
-5. Run project-specific publish, artifact, or deploy workflows from your own repository.
+5. Run project-specific publish, artifact, or deploy workflows from the consuming repository.
 
 ## 🧭 Commit Guidance
 

@@ -1,0 +1,5 @@
+{
+  "files.associations": {
+    "**/.github/workflows/*.yaml.jinja": "github-actions-workflow"
+  }
+}
