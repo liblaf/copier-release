@@ -7,6 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.3.1](https://github.com/liblaf/copier-release/releases/tag/v0.3.1) - 2026-05-17
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions action to v3 (#91) - [c9cbe48](https://github.com/liblaf/copier-release/commit/c9cbe4885dfaa7a0b64e3e1997543ade8eb5fe27) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 3771e22 (#93) - [b300303](https://github.com/liblaf/copier-release/commit/b300303e8977dd3021e0e90d149e289b8270bbb5) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update liblaf/actions action to v3 (#94) - [a9bd55b](https://github.com/liblaf/copier-release/commit/a9bd55b9fe89d0be8fe29fc0606d7b40a59c600d) by [@renovate[bot]](https://github.com/apps/renovate)
+- update shared workflows and tool pins - [6030e40](https://github.com/liblaf/copier-release/commit/6030e4004f597a4fa72a01ff0b75fccf7a35bd38) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.3.0](https://github.com/liblaf/copier-release/releases/tag/v0.3.0) - 2026-04-25
 
 ### 💥 BREAKING CHANGES
@@ -20,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@github-actions[bot]](https://github.com/apps/github-actions)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
