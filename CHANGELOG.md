@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.3.3](https://github.com/liblaf/copier-release/releases/tag/v0.3.3) - 2026-05-26
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update taiki-e/install-action digest to d9be7d8 (#105) - [2933420](https://github.com/liblaf/copier-release/commit/293342045ce2061be7e0862763823f80f8f0e9ce) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 920ab18 (#107) - [b582c50](https://github.com/liblaf/copier-release/commit/b582c504f5060e46b2ccdc426800c3ac5490a8a2) by [@renovate[bot]](https://github.com/apps/renovate)
+- use git-cliff action for release changelogs - [76fdafd](https://github.com/liblaf/copier-release/commit/76fdafdd51cfaea7dcfe1b7ede3fd6a09987ab4f) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.3.2](https://github.com/liblaf/copier-release/releases/tag/v0.3.2) - 2026-05-24
 
 ### ⚙️ Continuous Integrations
@@ -22,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
@@ -203,8 +217,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 💥 BREAKING CHANGES
 
 - release-please workflow and config files are removed.
-  Repositories using this template must migrate to the new
-  release-pr/release-create workflow pair and git-cliff configuration. - [4d92b5b](https://github.com/liblaf/copier-release/commit/4d92b5b1dd052e2e4b3904ce64763a3f00701738) by [@liblaf](https://github.com/liblaf)
+Repositories using this template must migrate to the new
+release-pr/release-create workflow pair and git-cliff configuration. - [4d92b5b](https://github.com/liblaf/copier-release/commit/4d92b5b1dd052e2e4b3904ce64763a3f00701738) by [@liblaf](https://github.com/liblaf)
 
 ### 🛠 Builds
 
