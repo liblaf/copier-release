@@ -7,6 +7,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.3.4](https://github.com/liblaf/copier-release/releases/tag/v0.3.4) - 2026-06-07
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update taiki-e/install-action digest to 8f531ea (#108) - [8064c3d](https://github.com/liblaf/copier-release/commit/8064c3d99d5337eb0ff9cd1719ddad79b5d9332f) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 60ae4ce (#110) - [8d64314](https://github.com/liblaf/copier-release/commit/8d64314a9d69e18770e17d3f312a48b3c65215eb) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 13608cb (#111) - [0571707](https://github.com/liblaf/copier-release/commit/0571707896c4bfcfcf7501085ba1a344a0da0c79) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 6ed6112 (#112) - [45a950f](https://github.com/liblaf/copier-release/commit/45a950faed00377c74fd8a55036fde6ce2e8c21b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 15413b2 (#113) - [753ebb1](https://github.com/liblaf/copier-release/commit/753ebb10d5e8d791fcfc225c04ed6acb5c4c5176) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 873c745 (#114) - [2e1d5ef](https://github.com/liblaf/copier-release/commit/2e1d5ef64aca3ecd15357976568d608e3d51714d) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 0fd4636 (#115) - [ed4a670](https://github.com/liblaf/copier-release/commit/ed4a6707847e96daca3461cbad6f2f4fb87b2eb9) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 50b4a71 (#116) - [e4c6739](https://github.com/liblaf/copier-release/commit/e4c6739461dc93d4fb4581db8ccb10eb15c6a650) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 3d83223 (#117) - [8a02d43](https://github.com/liblaf/copier-release/commit/8a02d430c291610566c6294550f65b5d5f1f915a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to e49978b (#118) - [7f764bb](https://github.com/liblaf/copier-release/commit/7f764bbadb8377911bb029ffbe45ee25bd9ee6dd) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 6887963 (#119) - [42f419f](https://github.com/liblaf/copier-release/commit/42f419feda7a04fbd63e8d4c26c58adc7d27a3a1) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 25435dc (#120) - [e1296f5](https://github.com/liblaf/copier-release/commit/e1296f54b6361d30b2699346828a291a0c95e3a6) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/checkout digest to df4cb1c (#121) - [d2f9852](https://github.com/liblaf/copier-release/commit/d2f98529637af2b7d198fe459ba3ff408537697b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to cde8c9e (#122) - [c3ced1b](https://github.com/liblaf/copier-release/commit/c3ced1bdafd5817dd7199edc48ddaa760c75d479) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 4bc351f (#123) - [1ec326b](https://github.com/liblaf/copier-release/commit/1ec326bea3cc266d62252f93056ea9c39770c57d) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 59012be (#124) - [e6c8bcb](https://github.com/liblaf/copier-release/commit/e6c8bcb79cbc3d9d6b3e3e7f7761491554b30b65) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 56545b3 (#125) - [cea1baf](https://github.com/liblaf/copier-release/commit/cea1bafaded79870e286ca29f1066b4234441a05) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.3.3](https://github.com/liblaf/copier-release/releases/tag/v0.3.3) - 2026-05-26
 
 ### ⚙️ Continuous Integrations
@@ -17,6 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
