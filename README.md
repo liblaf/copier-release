@@ -92,7 +92,7 @@ Ideas, fixes, and improvements are welcome. Open an issue or pull request if you
 
 ---
 
-#### 📝 License
+### 📝 License
 
 Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
 This project is [MIT](https://github.com/liblaf/copier-release/blob/main/LICENSE) licensed.
