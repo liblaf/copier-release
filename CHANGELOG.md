@@ -7,7 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.3.11](https://github.com/liblaf/copier-release/releases/tag/v0.3.11) - 2026-07-11
+## [v0.3.12](https://github.com/liblaf/copier-release/releases/tag/v0.3.12) - 2026-07-18
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to ba7e8a8 (#159) - [0dc37e3](https://github.com/liblaf/copier-release/commit/0dc37e37b724ff186aad5b7badfc047eb66d193b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 43aecc8 (#160) - [58237ad](https://github.com/liblaf/copier-release/commit/58237ad8222dab709848e5d95b5ff03e644fb0c3) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update softprops/action-gh-release digest to 3d0d988 (#162) - [175f0ba](https://github.com/liblaf/copier-release/commit/175f0ba35c2824eb0a39945d5db069a1ee4535af) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to ed67fa3 (#163) - [9dfe5d9](https://github.com/liblaf/copier-release/commit/9dfe5d97d44a14132e581ca0b9cbea50d9c346ba) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 07b4745 (#164) - [d2fb32d](https://github.com/liblaf/copier-release/commit/d2fb32db90fa80fbe968293c1a05a154fdf64eb5) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.3.11](https://github.com/liblaf/copier-release/releases/tag/v0.3.11) - 2026-07-12
 
 ### ⚙️ Continuous Integrations
 
@@ -20,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 
