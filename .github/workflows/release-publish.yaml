@@ -23,12 +23,12 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@ce9dc3a1daa92e93ddfe62d8378b93cedaa5056c # v3
+        uses: liblaf/actions/auth@f53e930a3c8515151fc60ca60623e766c0c85643 # v3
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           token: ${{ steps.auth.outputs.token }}
       - id: version
@@ -41,7 +41,7 @@ jobs:
         env:
           TITLE: ${{ github.event.pull_request.title }}
       - name: Create release
-        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3
         with:
           body: ${{ github.event.pull_request.body }}
           tag_name: ${{ steps.version.outputs.tag }}
