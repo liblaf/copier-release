@@ -39,7 +39,7 @@ jobs:
           tool: git-cliff
       - id: version
         name: Next version
-        uses: liblaf/actions/next-version@5f3779277c5b88e27b28ad3695390aa7227b9789 # v3
+        uses: liblaf/actions/next-version@73cad6439f8583d4bac35cdbdc6541aa0b6395c3 # v3
         env:
           GIT_CLIFF_CONFIG_URL: ${{ env.GIT_CLIFF_CONFIG_URL }}
           GITHUB_TOKEN: ${{ github.token }}
@@ -60,7 +60,7 @@ jobs:
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@5f3779277c5b88e27b28ad3695390aa7227b9789 # v3
+        uses: liblaf/actions/auth@73cad6439f8583d4bac35cdbdc6541aa0b6395c3 # v3
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
