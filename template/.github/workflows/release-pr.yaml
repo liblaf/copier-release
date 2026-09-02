@@ -71,7 +71,7 @@ jobs:
       - name: Install rumdl
         run: pipx install rumdl
       - name: Generate changelog
-        uses: orhun/git-cliff-action@f50e11560dce63f7c33227798f90b924471a88b5 # v4
+        uses: orhun/git-cliff-action@3d96a18cc4ec17e9dc69ddcc424ccafaf1f78ce2 # v4
         env:
           GIT_CLIFF_CONFIG_URL: ${{ env.GIT_CLIFF_CONFIG_URL }}
           GIT_CLIFF_TAG: ${{ needs.version.outputs.tag }}
@@ -79,7 +79,7 @@ jobs:
       - name: Format changelog
         run: rumdl fmt CHANGELOG.md
       - name: Generate PR body
-        uses: orhun/git-cliff-action@f50e11560dce63f7c33227798f90b924471a88b5 # v4
+        uses: orhun/git-cliff-action@3d96a18cc4ec17e9dc69ddcc424ccafaf1f78ce2 # v4
         with:
           args: --verbose --unreleased --strip all
         env:
