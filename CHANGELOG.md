@@ -7,7 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.3.20](https://github.com/liblaf/copier-release/releases/tag/v0.3.20) - 2026-09-12
+## [v0.3.21](https://github.com/liblaf/copier-release/releases/tag/v0.3.21) - 2026-09-13
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to 3760e21 (#219) - [9ab8483](https://github.com/liblaf/copier-release/commit/9ab8483665709e764cb6629e0a962eacdc156166) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.3.20](https://github.com/liblaf/copier-release/releases/tag/v0.3.20) - 2026-09-13
 
 ### ⚙️ Continuous Integrations
 
@@ -21,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.3.19](https://github.com/liblaf/copier-release/releases/tag/v0.3.19) - 2026-09-06
