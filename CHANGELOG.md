@@ -7,7 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.3.21](https://github.com/liblaf/copier-release/releases/tag/v0.3.21) - 2026-09-19
+## [v0.3.22](https://github.com/liblaf/copier-release/releases/tag/v0.3.22) - 2026-09-26
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update taiki-e/install-action digest to 94c31af (#226) - [ac39020](https://github.com/liblaf/copier-release/commit/ac390209717c2cc0e78703bdd2c143708eea4e23) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to dfae9bf (#228) - [fcd7638](https://github.com/liblaf/copier-release/commit/fcd76383e7359d43ab7da47339e55ede60ff172d) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 7623a79 (#229) - [8cf2c04](https://github.com/liblaf/copier-release/commit/8cf2c04dbda94b30b5f6ef655e3d946e740949cd) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 9983c65 (#230) - [935848b](https://github.com/liblaf/copier-release/commit/935848bd718185ac7094d67e22d46bd6def68796) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 4cef141 (#231) - [7a3dff7](https://github.com/liblaf/copier-release/commit/7a3dff7354294c44da7613dbde1012f08e8ea401) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.3.21](https://github.com/liblaf/copier-release/releases/tag/v0.3.21) - 2026-09-20
 
 ### ⚙️ Continuous Integrations
 
@@ -20,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.3.20](https://github.com/liblaf/copier-release/releases/tag/v0.3.20) - 2026-09-13
