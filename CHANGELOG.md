@@ -7,6 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.3.24](https://github.com/liblaf/copier-release/releases/tag/v0.3.24) - 2026-10-10
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to 639e227 (#235) - [6ca29e1](https://github.com/liblaf/copier-release/commit/6ca29e1d304ff2e2ff7f707b9df465bd2ed9b3e9) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to e407f7b (#236) - [8a3e9dc](https://github.com/liblaf/copier-release/commit/8a3e9dcc4ff6f73f86b0dff1a5e758b081972c84) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 183e429 (#238) - [42ba117](https://github.com/liblaf/copier-release/commit/42ba117780510be0bafea36d2edf82c48732add0) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to f7e5d7c (#239) - [d47e548](https://github.com/liblaf/copier-release/commit/d47e548264c84455f5f04bf586a7af9f27d7cb46) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to ab68953 (#240) - [3e17c13](https://github.com/liblaf/copier-release/commit/3e17c13a32ed7a2ae443ef6162ee46d290e41322) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.3.23](https://github.com/liblaf/copier-release/releases/tag/v0.3.23) - 2026-10-04
 
 ### ⚙️ Continuous Integrations
@@ -16,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.3.22](https://github.com/liblaf/copier-release/releases/tag/v0.3.22) - 2026-09-27
