@@ -7,7 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.3.25](https://github.com/liblaf/copier-release/releases/tag/v0.3.25) - 2026-10-17
+## [v0.3.26](https://github.com/liblaf/copier-release/releases/tag/v0.3.26) - 2026-10-24
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update liblaf/actions digest to 4268f54 (#244) - [68370a1](https://github.com/liblaf/copier-release/commit/68370a1ea1bc0dcfb5937b5b6ced13419833ffa3) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to a4d3f3f (#246) - [a73d4bf](https://github.com/liblaf/copier-release/commit/a73d4bf304d9429caddcd130dd91818de150adf9) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 1e29709 (#247) - [efed714](https://github.com/liblaf/copier-release/commit/efed714fca00dab05ebf33277197ce5fb996df1d) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.3.25](https://github.com/liblaf/copier-release/releases/tag/v0.3.25) - 2026-10-18
 
 ### ⚙️ Continuous Integrations
 
@@ -16,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.3.24](https://github.com/liblaf/copier-release/releases/tag/v0.3.24) - 2026-10-11
