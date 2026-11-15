@@ -7,7 +7,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.3.27](https://github.com/liblaf/copier-release/releases/tag/v0.3.27) - 2026-11-07
+## [v0.3.28](https://github.com/liblaf/copier-release/releases/tag/v0.3.28) - 2026-11-14
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update taiki-e/install-action digest to cfdb7ed (#260) - [21229c5](https://github.com/liblaf/copier-release/commit/21229c554426cf111d120e0cb992a22958a38a6a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update peter-evans/create-pull-request digest to 15733db (#262) - [d4e8171](https://github.com/liblaf/copier-release/commit/d4e8171133994ec0946d87d188e405e81122846f) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update peter-evans/create-pull-request digest to 3ffccac (#263) - [10eb140](https://github.com/liblaf/copier-release/commit/10eb140d1382ee5b22a1922429322c007e22c963) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update taiki-e/install-action digest to 4a76afe (#264) - [912f83f](https://github.com/liblaf/copier-release/commit/912f83f1c917ca8012cff285d956261e4923b73d) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.3.27](https://github.com/liblaf/copier-release/releases/tag/v0.3.27) - 2026-11-08
 
 ### ⚙️ Continuous Integrations
 
@@ -21,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.3.26](https://github.com/liblaf/copier-release/releases/tag/v0.3.26) - 2026-11-01
